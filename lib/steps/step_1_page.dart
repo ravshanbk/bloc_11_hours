@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'dart:math' as math show Random;
 
 
-const names = ["Foo", "Bar", "Baz", "Foo1"];
+const names = ['Foo', 'Bar', 'Baz', 'Foo1'];
 
 extension RandomElement<T> on Iterable<T> {
   T getRandomElement() => elementAt(math.Random().nextInt(length));
@@ -42,14 +42,14 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Home Page"),
+        title: const Text('Home Page'),
       ),
       body: StreamBuilder<String?>(
         stream: cubit.stream,
         builder: (context, snapshot) {
           final button = TextButton(
             onPressed: () => cubit.pickRandomName(),
-            child: const Text("Pick a random name"),
+            child: const Text('Pick a random name'),
           );
           switch (snapshot.connectionState) {
             case ConnectionState.none:

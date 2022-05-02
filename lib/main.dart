@@ -1,4 +1,4 @@
-import 'package:bloc11hours/steps/step_1_page.dart';
+import 'package:bloc11hours/bloc/persons_bloc.dart';
 import 'package:bloc11hours/steps/step_2_page.dart';
 import 'package:flutter/material.dart';
 
