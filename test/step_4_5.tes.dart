@@ -1,9 +1,9 @@
-import 'package:bloc11hours/apis/login_api.dart';
-import 'package:bloc11hours/apis/notes_api.dart';
 import 'package:bloc11hours/models.dart';
-import 'package:bloc11hours/steps/step_4/bloc/actions.dart';
-import 'package:bloc11hours/steps/step_4/bloc/app_bloc.dart';
-import 'package:bloc11hours/steps/step_4/bloc/app_state.dart';
+import 'package:bloc11hours/steps/step_4_5/apis/login_api.dart';
+import 'package:bloc11hours/steps/step_4_5/apis/notes_api.dart';
+import 'package:bloc11hours/steps/step_4_5/bloc/actions.dart';
+import 'package:bloc11hours/steps/step_4_5/bloc/app_bloc.dart';
+import 'package:bloc11hours/steps/step_4_5/bloc/app_state.dart';
 import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter/foundation.dart' show immutable;
 import 'package:flutter_test/flutter_test.dart';

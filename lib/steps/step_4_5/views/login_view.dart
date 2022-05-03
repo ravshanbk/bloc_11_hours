@@ -1,6 +1,6 @@
-import 'package:bloc11hours/steps/step_4/views/email_text_field.dart';
-import 'package:bloc11hours/steps/step_4/views/login_botton.dart';
-import 'package:bloc11hours/steps/step_4/views/password_text_field.dart';
+import 'package:bloc11hours/steps/step_4_5/views/email_text_field.dart';
+import 'package:bloc11hours/steps/step_4_5/views/login_botton.dart';
+import 'package:bloc11hours/steps/step_4_5/views/password_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 

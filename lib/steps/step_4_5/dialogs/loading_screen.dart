@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:bloc11hours/steps/step_4/dialogs/loading_screen_controller.dart';
+import 'package:bloc11hours/steps/step_4_5/dialogs/loading_screen_controller.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

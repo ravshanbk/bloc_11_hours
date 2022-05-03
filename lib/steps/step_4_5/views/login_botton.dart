@@ -1,5 +1,5 @@
 
-import 'package:bloc11hours/steps/step_4/dialogs/generic_dialog.dart';
+import 'package:bloc11hours/steps/step_4_5/dialogs/generic_dialog.dart';
 import 'package:bloc11hours/strings.dart';
 import 'package:flutter/material.dart';
 
