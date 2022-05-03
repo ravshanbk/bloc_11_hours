@@ -10,7 +10,7 @@ class LoginAction implements AppAction {
   final String email;
   final String password;
 
-  LoginAction({
+  const LoginAction({
     required this.email,
     required this.password,
   });

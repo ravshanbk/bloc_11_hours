@@ -6,10 +6,12 @@ import 'package:bloc11hours/steps/step_4/bloc/actions.dart';
 import 'package:bloc11hours/steps/step_4/bloc/app_state.dart';
 
 class AppBloc extends Bloc<AppAction, AppState> {
-  final LoginApiProticol loginApi;
+  final LoginApiProtocol loginApi;
   final NotesApiProticol notesApi;
+  final LoginHandle acceptedLoginHandle;
 
   AppBloc({
+    required this.acceptedLoginHandle,
     required this.loginApi,
     required this.notesApi,
   }) : super(AppState.empty()) {
@@ -39,7 +41,7 @@ class AppBloc extends Bloc<AppAction, AppState> {
         );
       },
     );
-    on<LoadNotesAction>((event, emit)async {
+    on<LoadNotesAction>((event, emit) async {
       //start loading
       emit(
         AppState(
@@ -51,7 +53,7 @@ class AppBloc extends Bloc<AppAction, AppState> {
       );
       // get the login handle
       final loginHandle = state.loginHandle;
-      if (loginHandle != LoginHandle.fooBar()) {
+      if (loginHandle != acceptedLoginHandle) {
         // invalid login handle, cannot fetch notes
         emit(
           AppState(
@@ -66,15 +68,14 @@ class AppBloc extends Bloc<AppAction, AppState> {
 
       // we have a valid login handle and want to fetch notes
       final notes = await notesApi.getNotes(loginHandle: loginHandle!);
-       emit(
-          AppState(
-            isLoading: false,
-            loginError: null,
-            loginHandle: loginHandle,
-            fetchedNotes: notes,
-          ),
-        );
-      
+      emit(
+        AppState(
+          isLoading: false,
+          loginError: null,
+          loginHandle: loginHandle,
+          fetchedNotes: notes,
+        ),
+      );
     });
   }
 }
