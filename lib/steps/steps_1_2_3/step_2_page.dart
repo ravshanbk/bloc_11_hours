@@ -1,9 +1,9 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:bloc11hours/bloc/bloc_actions.dart';
-import 'package:bloc11hours/bloc/person.dart';
-import 'package:bloc11hours/bloc/persons_bloc.dart';
+import 'package:bloc11hours/steps/steps_1_2_3/bloc_step_2_3/bloc_actions.dart';
+import 'package:bloc11hours/steps/steps_1_2_3/bloc_step_2_3/person.dart';
+import 'package:bloc11hours/steps/steps_1_2_3/bloc_step_2_3/persons_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'dart:developer' as devtools show log;

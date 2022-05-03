@@ -1,4 +1,4 @@
-import 'package:bloc11hours/bloc/person.dart';
+import 'package:bloc11hours/steps/steps_1_2_3/bloc_step_2_3/person.dart';
 import 'package:flutter/foundation.dart' show immutable;
 
 // enum PersonUrl {
