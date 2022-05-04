@@ -3,7 +3,6 @@ import 'package:bloc11hours/steps/step_6/bloc/app_state.dart';
 import 'package:bloc11hours/steps/step_6/bloc/bloc_events_6.dart';
 import 'package:bloc11hours/steps/step_6/extensions/stream/start_with.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class AppBlocView6<T extends AppBloc6> extends StatelessWidget {

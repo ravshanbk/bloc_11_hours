@@ -36,6 +36,7 @@ void main() {
       ));
 }
 
+// ignore: unused_element
 BlocProvider<AppBloc> _body_4_5() {
   return BlocProvider(
       create: (context) => AppBloc(
